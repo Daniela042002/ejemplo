@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Aqui es para cargar los metadatos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esta es una pagina de ejemplo para formularios">
+    <meta name="keywords" content="formularios,ejemplo,tipos">
+    <title>Registrar factura</title>
+    
+
+    <style>
+        input:valid{
+            background-color: chartreuse;
+        }
+        input:invalid{
+            background-color: red;
+        }
+    </style>
+
+    <style>
+        #nombre{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="nombre">Nombre</label>
+            <!-- Esto sirve para que al presionar el titulo'nombre'
+             se ponga el curso en la barra -->
+            <input type="text" name="nombre" id="nombre">
+            
+        </div>
+
+        <div>
+            <label>Fecha</label>
+            <input type="date">
+        </div>
+
+        <div>
+            <label>Serie</label>
+            <input type="number">
+        </div>
+
+        <div>
+            <label>N° correlativo</label>
+            <input type="number">
+        </div>
+
+        <div>
+            <label>Telefono</label>
+            <input type="tel" pattern="[0-9]{9}">
+            <!-- para poner numero telefonico -->
+        </div>
+
+        <div>
+            <label>Telefono 2</label>
+            <input type="tel" maxlength="9">
+            <!-- para poner numero telefonico y maxlenght para definir el maximo-->
+        </div>
+
+        <div>
+            <label>Correo</label>
+            <input type="email">
+            <!-- validar correo-->
+        </div>
+
+        <div>
+            <label>Contraseña</label>
+            <input type="password" minlength="2" maxlength="10">
+             <!-- validar contraseña-->
+        </div>
+
+        
+        <div>
+            <label>Color</label>
+            <input type="color">
+             <!-- desplegable colores-->
+        </div>
+
+        
+        <div>
+            <label>Subir Archivo</label>
+            <input type="File" >
+             <!-- subir archivo-->
+        </div>
+
+        
+        <div>
+            <label>Rango</label>
+            <input type="range" value="" min="1" max="10">
+             <!-- barra deslizable-->
+        </div>
+
+        <div>
+            <label>Telefono</label>
+            <input type="url" >
+            <!-- validar link -->
+        </div>
+
+        <div>
+            <label>Limpiar</label>
+            <input type="reset" >
+            <!-- limpiar todo-->
+        </div>
+
+        <div>
+            <label>Buscar</label>
+            <input type="search" >
+            <!-- barra buscadora -->
+        </div>
+
+    </form>
+</body>
+</html>

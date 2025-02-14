@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+    --yellow: #FCEED8;
+    --pink: #FBE5E6;
+    --skyblue: #DEE9FC;
+    --body-background: #121826;
+    --card-background: #212936;
+    --title-color: #E5E7EB;
+    --gray1: #9DA3AE;
+    --gray2: #D2D5DA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+    background-color: var(--body-background);
+}
+
+h1,
+h3 {
+    color: var(--title-color);
+}
+
+header p {
+    color: var(--gray1);
+}
+
+header h1{
+    font-size: 40px;
+}
+
+main {
+    /* Alinea las tarjetas de izquierda a derecha */
+    display: flex;
+    /* Da un espacio distribuido entre tarjetas */
+    gap: 1em;
+}
+
+/* Estilos para las tarjetas */
+article {
+    background-color: var(--card-background);
+}
+
+.card-description {
+    color: var(--gray2);
+}
